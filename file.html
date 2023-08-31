@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="heading">
+    <h1 align="center">JAVA SCRIPT CALCULATOR</h1>
+    </div>
+    <br>
+    <div class="calc">
+        <input type="text" id="mytext">
+        <table>
+        <tr>
+            <td><button onclick="buttonClicked('7')">7</button></td>
+            <td><button onclick="buttonClicked('8')">8</button></td>
+            <td><button onclick="buttonClicked('9')">9</button></td>
+            <td><button class="operator" onclick="buttonClicked('/')">÷</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="buttonClicked('4')">4</button></td>
+          <td><button onclick="buttonClicked('5')">5</button></td>
+          <td><button onclick="buttonClicked('6')">6</button></td>
+          <td><button class="operator" onclick="buttonClicked('*')">x</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="buttonClicked('1')">1</button></td>
+          <td><button onclick="buttonClicked('2')">2</button></td>
+          <td><button onclick="buttonClicked('3')">3</button></td>
+          <td><button class="operator" onclick="buttonClicked('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="buttonClicked('0')">0</button></td>
+          <td><button onclick="buttonClicked('.')">.</button></td>
+          <td><button class="operator" onclick="buttonClicked('+')">+</button></td>
+          <td><button class="operator" onclick="equal()">=</button></td>
+        </tr>
+        <tr>
+          <td colspan="4"><button id="clear" onclick="clearResult()">C</button></td>
+        </tr>
+      </table>
+    </div>
+</body>
+</html>
